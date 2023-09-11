@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananta</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <span  class="black"><h3>CONTACT US, WE ARE HERE 24/7</h3><i class="fas fa-map-marker-alt"><strong style="color: white; font-size: 15px;">India</strong></i></span>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <div id="down">
+                    <li><a href="login.html">Login&nbsp;&nbsp;<i class="fad fa-chevron-double-down" style="--fa-secondary-color: #616161; --fa-primary-color: #000000;"></i>&nbsp;&nbsp;&nbsp;</a></li>
+                    <div class="col">
+                        <ul class="hov">
+                            <li><button onclick="window.location.href = 'signup.html';">Sign Up | Create Account</button></li>
+                            <li style="font-size: 16px;"><strong>Your Account</strong></li>
+                            <li><i class="fas fa-briefcase"></i></i><span>Purchases</span></li>
+                            <li><i class="fas fa-heart-circle" style="color: rgb(201, 46, 46);"></i><span>Wishlist</span></li>
+                            <li><i class="fab fa-atlassian"></i><span>The Ananta Club</span></li>
+                            <li onclick="window.location.href = 'order.html'"><i class="fas fa-truck-moving"></i><span
+                                style="color: red;font-weight: 600;">Order Tracker</span></li>
+                            <li><i class="fas fa-money-check-alt"></i><span>Payment Methods</span></li>
+                            <li><i class="fas fa-eye"></i><span>Looks</span></li>
+                            <li><i class="fas fa-shopping-cart"></i><span>Pay & Manage Ananta Card</span></li>
+                            <li style="margin-top: 40px;font-size: 16px;"><strong>Account Settings</strong></li>
+                            <li><span>Password & Personal Info</span></li>
+                            <li><span>Email & Mail Prefrences</span></li>
+                            <li><span>Stores & Events</span></li>
+                            <li style="margin-top: 40px;"><strong>We're here to help, 24/7</strong></li>
+                            <li onclick="window.location.href = 'contact.html'" style="margin-bottom: 20px;"><span>Contact Us</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart">
+                    <li style="border-radius: 50%;padding: 10px;background-color: rgb(222, 222, 222);"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <div id="cartAmount">0</div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section id="at-contact">
+        <h2>#Let's make something <strong>awesome together.</strong></h2>
+        <p>Get in touch</p>
+    </section>
+    <section id="form-details">
+        <form action="connect2.php" method="post">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We Love To Hear From You</h2>
+            <input type="text" name="name" placeholder="ENTER YOUR NAME.">
+            <input type="email" name="email" placeholder="ENTER E-Mail.">
+            <input type="text" name="subject" placeholder="SUBJECT.">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+        <div class="people">
+            <div class="people1"><h2><span>CONSUMER </span>PROTECTION</h2></div>
+            <div>
+                <p><span>Grievance Officer</span>Name: KRISHNA <br>Designation: Digital Brand Commerce Director <br>
+                    Address: Plot No. 53, Sector-32, Gurugram, Haryana-122001, India ,<br>
+                    Email: Grievanceofficer@ananta.com,<br>
+                    Tel: 1-800-120-3300</p>
+            </div>
+        </div>
+    </section>
+    <section id="update" class="section-p1 section-m1">
+        <div class = "news">
+            <h4>SIGN UP FOR ANANTA UPDATES</h4>
+            <p>By entering your email address, you consent to receiving our newsletter with access to our<span> collections, events and initiatives.</span> </p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Email Address">
+        </div>
+    </section>
+    <footer class="section-p1" id="fooot">
+        <div class="column">
+            <img class="logo" src="images/zx.png" alt="ERROR LOADING">
+            <h4>Contact</h4>
+            <p><strong>Ananta </strong> Osteria Belivery Hills da Massimo Buttra</p>
+            <p>© 2016 - 2020 ANANTA S.p.A. - All rights reserved.<strong>License</strong> # 2294/I/193</p>
+            <div class="follow">
+                <h4>FIND US ON</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f" onclick = "Fbredirect();"></i>
+                    <i class="fab fa-twitter" onclick = "Twredirect();"></i>
+                    <i class="fab fa-instagram" onclick ="Inredirect();"></i>
+                    <i class="fab fa-youtube" onclick ="Ytredirect();"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h4>The Comapny</h4>
+            <a href="about.html">About Ananta</a>
+            <a href="privacy.html">Privacy & Cookies</a>
+            <a href="legal.html">Legal</a>
+            <a href="coinfo.html">Corporate Information</a>
+        </div>
+
+        <div class="column">
+            <h4>NEED HELP?</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="shipping.html">Shipping Services</a>
+            <a href="procare.html">Product Care</a>
+            <a href="return.html">Return & Exchange</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="column install">
+            <h4>Install Now</h4>
+            <p>Avilable on App store</p>
+            <div class="row">
+                <img src="images/app.jpg" onclick="Appredirect();" alt="ERROR LOADING">
+                <p>Secured Payment</p>
+                <img src="images/pay.png" onclick="Payredirect();" alt="ERROR LOADING">
+        </div>
+    </footer>
+    <h3 class="foot12">Copyright © 2018 – All Rights Reserved.</h3>
+    <script src="script.js">
+    </script>
+</body>
+</html>

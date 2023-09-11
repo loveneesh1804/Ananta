@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananta</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #navdown {
+            position: relative;
+        }
+
+        #dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            background-color: #f2f3f6;
+            height: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #dropdown a {
+            margin: 0px 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        #navdown span:hover {
+            border-bottom: 3px solid #333;
+            cursor: pointer;
+        }
+
+        .subnav1 {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            box-sizing: border-box;
+            top: 26px;
+            right: 0px;
+            width: 100%;
+            padding: 50px 0px;
+            padding-bottom: 40px;
+            background-color: #f9f9f9;
+            /* transition: all 0.3s ease-in-out; */
+            visibility: hidden;
+        }
+
+        .colu1 li {
+            list-style: none;
+            font-size: 14px;
+            padding: 7px 22px;
+            color: #000000;
+        }
+
+        .bolde li {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        #male:hover .subnav1 {
+            visibility: visible;
+            /* transition: all 0.3s ease-in-out; */
+        }
+        #female:hover .subnav1 {
+            visibility: visible;
+            /* transition: all 0.3s ease-in-out; */
+        }
+        .subnav2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            box-sizing: border-box;
+            top: 26px;
+            right: 500px;
+            width: 24%;
+            padding: 50px 0px;
+            background-color: #f9f9f9;
+            visibility: hidden;
+        }
+        #brandes:hover .subnav2 {
+            visibility: visible;
+            /* transition: all 0.3 ease-in-out; */
+        }
+        .colu1 i{
+            padding-right: 5px;
+            font-size: 20px;
+        }
+        #kidzs:hover .subnav1{
+            visibility: visible;
+            /* transition: all 0.3 ease-in-out; */
+        }
+        .subnav3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            box-sizing: border-box;
+            top: 26px;
+            right: 200px;
+            width: 38%;
+            padding: 20px 0px;
+            background-color: #f9f9f9;
+            visibility: hidden;
+        }
+        .subnav3 button{
+            padding: 15px 25px;
+            background-color: transparent;
+            font-weight: 800;
+            border: 1px solid #bebdbd;
+            border-radius: 2px;
+            font-size: 13px;
+        }
+        .subnav3 i{
+            padding: 0px 10px;
+            margin-left: 10px;
+            color: #7c7c7c;
+        }
+        #imglog:hover .subnav3 {
+            visibility: visible;
+            /* transition: all 0.3 ease-in-out; */
+        }
+        #newwer{
+            position: absolute;
+            right: 490px;
+            font-size: 9px;
+            color: red;
+            font-weight: 800;
+        }
+        #xyz123 span:hover{
+            border-bottom: 3px solid rgb(240, 13, 13);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="black">
+        <h3>UPI & NET BANKING AVILABLE!</h3><i class="fas fa-map-marker-alt"><strong
+                style="color: white; font-size: 15px;">India</strong></i>
+    </span>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div id="down">
+                    <li><a id="userlog" href="login.html">Login&nbsp;&nbsp;<i class="fad fa-chevron-double-down"
+                                style="--fa-secondary-color: #616161; --fa-primary-color: #000000;"></i>&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <div class="col">
+                        <ul class="hov">
+                            <li><button onclick="window.location.href = 'signup.html';">Sign Up | Create
+                                    Account</button></li>
+                            <li style="font-size: 16px;"><strong>Your Account</strong></li>
+                            <li><i class="fas fa-briefcase"></i></i><span>Purchases</span></li>
+                            <li><i class="fas fa-heart-circle"
+                                    style="color: rgb(201, 46, 46);"></i><span>Wishlist</span></li>
+                            <li><i class="fab fa-atlassian"></i><span>The Ananta Club</span></li>
+                            <li onclick="window.location.href = 'order.html'"><i class="fas fa-truck-moving"></i><span style="color: red;font-weight: 600;">Order Tracker</span></li>
+                            <li><i class="fas fa-money-check-alt"></i><span>Payment Methods</span></li>
+                            <li><i class="fas fa-eye"></i><span>Looks</span></li>
+                            <li><i class="fas fa-shopping-cart"></i><span>Pay & Manage Ananta Card</span></li>
+                            <li style="margin-top: 40px;font-size: 16px;"><strong>Account Settings</strong></li>
+                            <li><span>Password & Personal Info</span></li>
+                            <li><span>Email & Mail Prefrences</span></li>
+                            <li><span>Stores & Events</span></li>
+                            <li style="margin-top: 40px;"><strong>We're here to help, 24/7</strong></li>
+                            <li onclick="window.location.href = 'contact.html'" style="margin-bottom: 20px;">
+                                <span>Contact Us</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart">
+                    <li style="border-radius: 50%;padding: 10px;background-color: rgb(222, 222, 222);"><a
+                            href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <div id="cartAmount"></div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section id="navdown">
+        <div id="newwer">NEW</div>
+        <ul id="dropdown">
+            <div id="male">
+                <li><a><span>Men</span></a></li>
+                    <div class="subnav1">
+                        <div class="colu1 bolde" style="padding-right: 80px;">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><span><strong>Featured</strong></span></li>
+                                <li><span>New Realeases</span></li>
+                                <li><span>Bestsellers</span></li>
+                                <li><span>Member Exclusive</span></li>
+                                <li><span>Custom with Ananta</span></li>
+                                <li><span>Sale</span></li>
+                                <li><span>Retro Running</span></li>
+                                <li><span>Last Sizes Avilable</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>All Shoes</span></strong></li>
+                                <li><span>Newest Sneaker</span></li>
+                                <li><span>Lifestyle</span></li>
+                                <li><span>Running</span></li>
+                                <li><span>Football</span></li>
+                                <li><span>Sandals and Sliders</span></li>
+                                <li><span>Last Size Avilable</span></li>
+                                <li><span>Top under $200.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Clothing</span></strong></li>
+                                <li><span>Tops and T-Shirts</span></li>
+                                <li><span>Shorts</span></li>
+                                <li><span>Pants and Leggings</span></li>
+                                <li><span>Hoodie and Sweatshirts</span></li>
+                                <li><span>Ananta Wear</span></li>
+                                <li><span>Jerseys and Kits</span></li>
+                                <li><span>Jackets and Gilets</span></li>
+                                <li><span>Retro</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Shop By Sports</span></strong></li>
+                                <li><span>Running</span></li>
+                                <li><span>BasketBall</span></li>
+                                <li><span>Tennis</span></li>
+                                <li><span>Skateboarding</span></li>
+                                <li><span>Yoga</span></li>
+                                <li><span>Gym and Tranning</span></li>
+                                <li><span>Golf</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Accessories and Equipment</span></strong></li>
+                                <li><span>All Accessories and Equipment</span></li>
+                                <li><span>Bags and Backpacks</span></li>
+                                <li><span>Socks</span></li>
+                                <li><span>Hats and Headwear</span></li>
+                                <li><span>Equipments</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Shop By Brand</span></strong></li>
+                                <li><span>Ananta Sports</span></li>
+                                <li><span>Ananta</span></li>
+                                <li><span>Ananta by You</span></li>
+                                <li><span>AC</span></li>
+                                <li><span>Ananta SB</span></li>
+                                <li style="margin-top: 15px;"><span><strong>Sustainable Material</strong></span></li>
+                                <li><span>Organic Cotton</span></li>
+                                <li><span>Vegan</span></li>
+                                <li>Recycled Material</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div id="female">
+                <li><a><span>Women</span></a></li>
+                    <div class="subnav1">
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><span><strong>Featured</strong></span></li>
+                                <li><span>New Realeases</span></li>
+                                <li><span>Bestsellers</span></li>
+                                <li><span>Member Exclusive</span></li>
+                                <li><span>Retro Running</span></li>
+                                <li><span>Find Your Feel</span></li>
+                                <li><span>Yoga</span></li>
+                                <li><span>Custom with Ananta</span></li>
+                                <li><span>Sale</span></li>
+                                <li><span>Last Sizes Avilable</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Shoes</span></strong></li>
+                                <li>All Shoes</li>
+                                <li><span>Newest</span></li>
+                                <li><span>Lifestyle</span></li>
+                                <li><span>Running</span></li>
+                                <li><span>Football</span></li>
+                                <li><span>Gym and Traning</span></li>
+                                <li><span>Custom</span></li>
+                                <li><span>Sandals</span></li>
+                                <li><span>Retro</span></li>
+                                <li><span>Sliders</span></li>
+                                <li><span>Last Size</span></li>
+                                <li><span>Top under $200.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Clothing</span></strong></li>
+                                <li><span>All Clothing</span></li>
+                                <li><span>Performance Essentials</span></li>
+                                <li><span>Sports Bra</span></li>
+                                <li><span>Pants and Leggings</span></li>
+                                <li><span>Tops and T-Shirts</span></li>
+                                <li><span>Shorts</span></li>
+                                <li><span>Hoodie and Sweatshirts</span></li>
+                                <li><span>Ananta Wear</span></li>
+                                <li><span>T-shirts</span></li>
+                                <li><span>Jackets and Gilets</span></li>
+                                <li><span>Skirts and Dresses</span></li>
+                                <li><span>Plus Size</span></li>
+                                <li><span>Modest Wear</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Shop By Sports</span></strong></li>
+                                <li><span>Running</span></li>
+                                <li><span>BasketBall</span></li>
+                                <li><span>Yoga</span></li>
+                                <li><span>Tennis</span></li>
+                                <li><span>Golf</span></li>
+                                <li><span>Gym and Tranning</span></li>
+                                <li><span>Skateboarding</span></li>
+
+                                <li style="margin-top: 20px;"><strong><span>Accessories and Equipments</span></strong></li>
+                                <li><span>All Accessories and Equipments</span></li>
+                                <li><span>Bags and Backpacks</span></li>
+                                <li><span>Socks</span></li>
+                                <li><span>Hats and Headwear</span></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="colu1">
+                            <img style="margin-top: 5px;width:16rem;" src="https://images.pexels.com/photos/6347546/pexels-photo-6347546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </div>   -->
+                    </div>
+            </div>
+            <div id="kidzs">
+                <li><a><span>Kids</span></a></li>
+                <div class="subnav1">
+                    <div class="colu1">
+                        <ul>
+                            <li style="margin-bottom: 10px;"><span><strong>Featured</strong></span></li>
+                            <li><span>New Realeases</span></li>
+                            <li><span>Bestsellers</span></li>
+                            <li><span>Member Exclusive</span></li>
+                            <li><span>Retro Running</span></li>
+                            <li><span>Find Your Feel</span></li>
+                            <li><span>Yoga</span></li>
+                            <li><span>Custom with Ananta</span></li>
+                            <li><span>Last Sizes Avilable</span></li>
+                            <li><span>Sale</span></li>
+                            <li style="margin-top: 20px;"><span><strong>Kids By Age</strong></span></li>
+                            <li><span>Older Kids (7 - 14 years)</span></li>
+                            <li><span>Younger Kids (4 - 7 years)</span></li>
+                            <li><span>Babies & Toddlers (0 - 4 years)</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="colu1">
+                        <ul>
+                            <li style="margin-bottom: 10px;"><strong><span>Boys' Shoes</span></strong></li>
+                            <li>All Shoes</li>
+                            <li><span>Older Boys (7 - 14 years)</span></li>
+                            <li><span>Younger Boys (4 - 7 years)</span></li>
+                            <li><span>Lifestyle</span></li>
+                            <li><span>Running</span></li>
+                            <li><span>Football</span></li>
+                            <li><span>Sandals</span></li>
+                            <li><span>Sandals and Sliders</span></li>
+                            <li style="margin-top: 20px;"><span><strong>Boys' Clothing</strong></span></li>
+                            <li><span>Tops and T-Shirts</span></li>
+                            <li><span>Hoodies and Sweatshirts</span></li>
+                            <li><span>Pants and Leggings</span></li>
+                            <li><span>Shorts</span></li>
+                            <li><span>All Boys' Clothing</span></li>
+                        </ul>
+                    </div>
+                    <div class="colu1">
+                        <ul>
+                            <li style="margin-bottom: 10px;"><strong><span>Girls' Shoes</span></strong></li>
+                            <li>All Shoes</li>
+                            <li><span>Older Girls (7 - 14 years)</span></li>
+                            <li><span>Younger Girls (4 - 7 years)</span></li>
+                            <li><span>Lifestyle</span></li>
+                            <li><span>Running</span></li>
+                            <li><span>Football</span></li>
+                            <li><span>Sandals</span></li>
+                            <li><span>Sandals and Sliders</span></li>
+                            <li style="margin-top: 20px;"><span><strong>Girls' Clothing</strong></span></li>
+                            <li><span>Tops and T-Shirts</span></li>
+                            <li><span>Sports Bras</span></li>
+                            <li><span>Hoodies and Sweatshirts</span></li>
+                            <li><span>Pants and Leggings</span></li>
+                            <li><span>Shorts</span></li>
+                            <li><span>All Girls' Clothing</span></li>
+                        </ul>
+                    </div>
+                    <div class="colu1">
+                        <ul>
+                            <li style="margin-bottom: 10px;"><strong><span>Accessories and Equipments</span></strong></li>
+                            <li><span>All Accessories and Equipments</span></li>
+                            <li><span>Bags and Backpacks</span></li>
+                            <li><span>Socks</span></li>
+                            <li><span>Hats and Headwear</span></li>
+
+                            <li style="margin-top: 20px;"><strong><span>Shop By Sports</span></strong></li>
+                            <li><span>Running</span></li>
+                            <li><span>BasketBall</span></li>
+                            <li><span>Tennis</span></li>
+                            <li><span>Gym and Tranning</span></li>
+                            <li><span>Football</span></li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="brandes">
+                <li id="xyz123" style="color: red;"><a><span>Brand</span></a></li>
+                    <div class="subnav2">
+                        <div class="colu1">
+                            <ul>
+                                <li style="margin-bottom: 10px;"><strong><span>Shop By Brand</span></strong></li>
+                                <li><i style="color:red;" class="fab fa-airbnb"></i><span>Ananta Sports</span></li>
+                                <li><i class="fab fa-amilia"></i><span>Ananta</span></li>
+                                <li><i class="fab fa-angular"></i><span>Ananta by You</span></li>
+                                <li><i class="fab fa-audible"></i><span>AC</span></li>
+                                <li><i style="color: rgb(176, 37, 37);" class="fab fa-adn"></i></i><span>Ananta SB</span></li>
+                            </ul>
+                        </div>
+                        <div class="colu1">
+                            <img src="images/zx.png" style="width: 150px;height: 150px;" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div id="imglog">
+                <li><a><span>Studio</span></a></li>
+                    <div class="subnav3">
+                        <img src="images/subnav1.png" style="width: 500px;height: 420px;" alt="">
+                        <button>EXPLORE STUDIO <i class="fas fa-chevron-right"></i></button>
+                    </div>
+            </div>
+        </ul>
+    </section>
+    <section id="model">
+        <h4>Extra 15% off on everthing for member</h4>
+        <h2>Hand crafted clothing</h2>
+        <h1>SINCE 2002</h1>
+        <p>© 2016 - 2020 Ananta's Ananta S.p.A. - All rights reserved. LICENCE # 2294</p>
+        <button onclick="Redirect();">Shop Now</button>
+    </section>
+    <section id="product" class="section-p1">
+        <h2>BESTSELLERS</h2>
+        <p>Exclusive Collection : Ultraboost & Predator</p>
+        <div class="pro-container" id="bestSellers">
+            <!-- From products.js -->
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <h4>FREE DELIVERY, FREE RETURNS</h4>
+        <h2>JOIN ANANTA AND GET <span>15% OFF</span></h2>
+        <button class="normal" onclick="Redirect3();">SIGN UP FOR FREE </button>
+    </section>
+    <section id="product" class="section-p1">
+        <h2>NEW ARRIVALS</h2>
+        <p>Classic Collection : Trending Drift</p>
+        <div class="pro-container" id="newArrivals">
+            <!-- From products.js -->
+        </div>
+    </section>
+    <section id="sample" class="section-p1">
+        <div class="banbox">
+            <h4>Members week</h4>
+            <h2>SHOP MEMBERS EXCLUSIVE</h2>
+            <span>Unlock exclusive experiences, drops and rewards</span>
+        </div>
+        <div class="banbox banbox2">
+            <h4>Exclusive Collections</h4>
+            <h2>SHOP NOW</h2>
+            <span>Summer:Winter:Sports Collection</span>
+        </div>
+    </section>
+    <section id="banner3">
+        <div class="banbox">
+            <h2>SALE</h2>
+            <h3>WOMEN COLLECTION -70% OFF</h3>
+        </div>
+        <div class="banbox banbox4">
+            <h2>100% COTTON</h2>
+            <h3>NATURAL CLOTHING</h3>
+        </div>
+    </section>
+    <section id="features" class="section-p1">
+        <div class="box">
+            <img src="images/f1.jpg" alt="ERROR LOADING">
+            <h6>CASH ON DELIVERY</h6>
+        </div>
+
+        <div class="box">
+            <img src="images/f2.png" alt="ERROR LOADING">
+            <h6>REFUND POLICY</h6>
+        </div>
+
+        <div class="box">
+            <img src="images/f3.png" alt="ERROR LOADING">
+            <h6>NATURAL FIBER</h6>
+        </div>
+
+        <div class="box">
+            <img src="images/f4.png" alt="ERROR LOADING">
+            <h6>MADE WITH LOVE</h6>
+        </div>
+
+        <div class="box">
+            <img src="images/f5.png" alt="ERROR LOADING">
+            <h6>CERTIFIED</h6>
+        </div>
+    </section>
+    <section id="update" class="section-p1 section-m1">
+        <div class="news">
+            <h4>SIGN UP FOR ANANTA UPDATES</h4>
+            <p>By entering your email address, you consent to receiving our newsletter with access to our<span>
+                    collections, events and initiatives.</span> </p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Email Address">
+        </div>
+    </section>
+    <footer class="section-p1" id="fooot">
+        <div class="column">
+            <img class="logo" src="images/zx.png" alt="ERROR LOADING">
+            <h4>Contact</h4>
+            <p><strong>Ananta </strong> Osteria Belivery Hills da Massimo Buttra</p>
+            <p>© 2016 - 2020 ANANTA S.p.A. - All rights reserved.<strong>License</strong> # 2294/I/193</p>
+            <div class="follow">
+                <h4>FIND US ON</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f" onclick="Fbredirect();"></i>
+                    <i class="fab fa-twitter" onclick="Twredirect();"></i>
+                    <i class="fab fa-instagram" onclick="Inredirect();"></i>
+                    <i class="fab fa-youtube" onclick="Ytredirect();"></i>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h4>The Comapny</h4>
+            <a href="about.html">About Ananta</a>
+            <a href="privacy.html">Privacy & Cookies</a>
+            <a href="legal.html">Legal</a>
+            <a href="coinfo.html">Corporate Information</a>
+        </div>
+
+        <div class="column">
+            <h4>NEED HELP?</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="shipping.html">Shipping Services</a>
+            <a href="procare.html">Product Care</a>
+            <a href="return.html">Return & Exchange</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="column install">
+            <h4>Install Now</h4>
+            <p>Avilable on App store</p>
+            <div class="row">
+                <img src="images/app.jpg" onclick="Appredirect();" alt="ERROR LOADING">
+                <p>Secured Payment</p>
+                <img src="images/pay.png" onclick="Payredirect();" alt="ERROR LOADING">
+            </div>
+    </footer>
+    <h3 class="foot12">Copyright © 2018 – All Rights Reserved.</h3>
+    <script src="script.js">
+    </script>
+    <script type="module" src="./products.js">
+    </script>
+</body>
+
+</html>

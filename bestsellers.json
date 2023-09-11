@@ -1,0 +1,66 @@
+[
+    {
+        "id":"1",
+        "heroName":"Ananta",
+        "productName":"Predator Solid tee Shirt",
+        "rating":"5",
+        "price":2548.00,
+        "src":"images/p11.jpg"
+    },
+    {
+        "id":"2",
+        "heroName":"Ananta",
+        "productName":"OODED WATER-REPELLENT TECHNICAL JACKET",
+        "rating":"5",
+        "price":5909.00,
+        "src":"images/p7.jpg"
+    },
+    {
+        "id":"3",
+        "heroName":"Ananta",
+        "productName":"KNIT T-Shirt",
+        "rating":"5",
+        "price":3198.00,
+        "src":"images/p8.jpg"
+    },
+    {
+        "id":"4",
+        "heroName":"Ananta",
+        "productName":"DOUBLE-WEAVE JACKET",
+        "rating":"5",
+        "price":14878,
+        "src":"images/p5.jpg"
+    },
+    {
+        "id":"5",
+        "heroName":"Ananta",
+        "productName":"CROPPED DENIM JACKE",
+        "rating":"5",
+        "price":3109,
+        "src":"images/p6.jpg"
+    },
+    {
+        "id":"6",
+        "heroName":"Ananta",
+        "productName":"EMBROIDERED TACO T-SHIRT",
+        "rating":"5",
+        "price":4128,
+        "src":"images/p2.jpg"
+    },
+    {
+        "id":"7",
+        "heroName":"Ananta",
+        "productName":"JEANS WITH TWISTED SEAM",
+        "rating":"5",
+        "price":7678,
+        "src":"images/p9.jpg"
+    },
+    {
+        "id":"8",
+        "heroName":"Ananta",
+        "productName":"SOFT BELT BAG",
+        "rating":"5",
+        "price":1148,
+        "src":"images/p10.jpg"
+    }
+]
